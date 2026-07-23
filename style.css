@@ -1,0 +1,244 @@
+/* 全体のリセット */
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    background-color: #161618;
+}
+
+/* 共通コンテナ */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ヘッダーエリア */
+header {
+    background-color: #2a2a2c;
+    padding: 20px 0;
+    border-bottom: 2px solid #b93d3d;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+    color: #b93d3d;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #b93d3d;
+}
+
+/* メインビジュアルエリア */
+.main-hero {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* 左側：画像プレースホルダー */
+.hero-left {
+    flex: 1;
+}
+
+.image-placeholder {
+    background-color: #3a3a3c;
+    height: 250px;
+    border: 2px solid #555;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-placeholder p {
+    position: relative;
+    z-index: 2;
+    color: #aaa;
+    margin: 0;
+}
+
+.cross-line-1, .cross-line-2 {
+    position: absolute;
+    width: 150%;
+    height: 1px;
+    background-color: #555;
+    top: 50%;
+    left: -25%;
+}
+.cross-line-1 { transform: rotate(14deg); }
+.cross-line-2 { transform: rotate(-14deg); }
+
+/* 右側：テキストとメインボタン */
+.hero-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-text {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* ゲーム概要を見るボタン */
+.btn-primary {
+    display: inline-block;
+    background-color: #b93d3d;
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #932c2c;
+    transform: translateY(-2px);
+}
+
+/* 区切り線 */
+.section-divider {
+    border: none;
+    border-top: 3px solid #000;
+    margin: 40px 0;
+}
+
+/* 中段コンテンツ */
+.middle-content {
+    padding: 20px 0 40px;
+}
+
+.middle-content h3 {
+    color: #fff;
+    border-left: 4px solid #b93d3d;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+/* 下段のグレーエリア */
+.bottom-section {
+    background-color: #242428;
+    padding: 5px 0;
+    margin-bottom: 40px;
+}
+
+.bottom-card {
+    background-color: #2a2a2c;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 6px;
+}
+
+.bottom-card h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+/* 下部キャラクターボタンのレイアウト */
+.character-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.btn-char {
+    flex: 1;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #fff;
+    transition: all 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* サバイバー（青みがかったダークトーン） */
+.btn-survivor {
+    background-color: #2e4a62;
+    border: 1px solid #41688c;
+}
+.btn-survivor:hover {
+    background-color: #22374a;
+    transform: translateY(-2px);
+}
+
+/* ハンター（赤みがかったダークトーン） */
+.btn-hunter {
+    background-color: #5c2c2c;
+    border: 1px solid #803d3d;
+}
+.btn-hunter:hover {
+    background-color: #422020;
+    transform: translateY(-2px);
+}
+
+/* フッター */
+footer {
+    background-color: #0b0b0d;
+    padding: 30px 0;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer-bar {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    width: 200px;
+    height: 15px;
+    background-color: #444;
+}
