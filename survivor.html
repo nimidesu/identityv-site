@@ -8,70 +8,86 @@
 </head>
 <body>
 
+    <!-- ヘッダーエリア -->
     <header>
-        <div class="logo">Identity V</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="about.html">ゲーム概要</a></li>
-                <li><a href="survivor.html" class="active">サバイバー</a></li>
-                <li><a href="hunter.html">ハンター</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo">Identity V</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">ゲーム概要</a></li>
+                    <li><a href="survivor.html" class="active">サバイバー</a></li>
+                    <li><a href="hunter.html">ハンター</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div class="container page-content">
-        <section class="card">
-            <h2>👤 サバイバー（逃げる側）</h2>
-            <p class="rule-text"><strong>【勝利条件と基本ルール】</strong><br>4人で協力してマップ内の暗号機を解読し、ゲートを開けて3人以上脱出できれば勝利となります。</p>
+    <!-- メインコンテンツ -->
+    <div class="container content-section">
+        <div class="gray-card">
+            <h3>👤 サバイバー（逃げる側）</h3>
+            <p style="background-color: #2a1818; border: 1px solid #5a2222; padding: 15px; border-radius: 4px; font-size: 14px; color: #f0c0c0; margin-bottom: 25px;">
+                <strong>【勝利条件と基本ルール】</strong><br>
+                4人で協力してマップ内の暗号機を解読し、ゲートを開けて3人以上脱出できれば勝利となります。
+            </p>
             
-            <h3>サバイバーの4つのタイプとお勧めキャラクター</h3>
-            <div class="grid">
-                <div class="grid-item">
-                    <span class="icon">🛡️</span>
-                    <h4>救援型</h4>
-                    <p>捕まった仲間を安全に救助するプロ。</p>
-                    <div class="recommend-box">
-                        <h5>★おすすめキャラ</h5>
-                        <p><strong>傭兵</strong><br>ダメージ反映が遅れるため、確実に救助できる初心者必須のキャラです。</p>
+            <h4 style="color: #b93d3d; font-size: 16px; margin: 25px 0 15px 0; font-weight: bold;">サバイバーの4つのタイプとお勧めキャラクター</h4>
+            
+            <div class="character-buttons" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                <div style="background-color: #161618; padding: 20px 15px; border-radius: 4px; border: 1px solid #32323a; text-align: center;">
+                    <span style="font-size: 24px; display: block; margin-bottom: 8px;">🛡️</span>
+                    <h4 style="margin: 0 0 8px 0; color: #fff; font-size: 15px;">救援型</h4>
+                    <p style="margin: 0 0 15px 0; font-size: 13px; color: #b0b0b0; line-height: 1.5;">捕まった仲間を安全に救助するプロ。</p>
+                    <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #32323a; text-align: left;">
+                        <h5 style="margin: 0 0 5px 0; color: #b93d3d; font-size: 13px;">★おすすめキャラ</h5>
+                        <p style="margin: 0; font-size: 13px; color: #b0b0b0;"><strong style="color: #fff;">傭兵</strong><br>ダメージ反映が遅れるため、確実に救助できる初心者必須のキャラです。</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <span class="icon">🔧</span>
-                    <h4>解読型</h4>
-                    <p>暗号機の解読スピードが速い主役。</p>
-                    <div class="recommend-box">
-                        <h5>★おすすめキャラ</h5>
-                        <p><strong>「囚人」</strong><br>離れた暗号機を繋いで同時に解読でき、初心者でも扱いやすいです。</p>
+
+                <div style="background-color: #161618; padding: 20px 15px; border-radius: 4px; border: 1px solid #32323a; text-align: center;">
+                    <span style="font-size: 24px; display: block; margin-bottom: 8px;">🔧</span>
+                    <h4 style="margin: 0 0 8px 0; color: #fff; font-size: 15px;">解読型</h4>
+                    <p style="margin: 0 0 15px 0; font-size: 13px; color: #b0b0b0; line-height: 1.5;">暗号機の解読スピードが速い主役。</p>
+                    <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #32323a; text-align: left;">
+                        <h5 style="margin: 0 0 5px 0; color: #b93d3d; font-size: 13px;">★おすすめキャラ</h5>
+                        <p style="margin: 0; font-size: 13px; color: #b0b0b0;"><strong style="color: #fff;">「囚人」</strong><br>離れた暗号機を繋いで同時に解読でき、初心者でも扱いやすいです。</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <span class="icon">🏃</span>
-                    <h4>牽制型</h4>
-                    <p>ハンターを引きつけて時間を稼ぐ盾。</p>
-                    <div class="recommend-box">
-                        <h5>★おすすめキャラ</h5>
-                        <p><strong>調香師</strong><br>香水を使って時間を巻き戻し、受けたダメージを無かったことにできます。</p>
+
+                <div style="background-color: #161618; padding: 20px 15px; border-radius: 4px; border: 1px solid #32323a; text-align: center;">
+                    <span style="font-size: 24px; display: block; margin-bottom: 8px;">🏃</span>
+                    <h4 style="margin: 0 0 8px 0; color: #fff; font-size: 15px;">牽制型</h4>
+                    <p style="margin: 0 0 15px 0; font-size: 13px; color: #b0b0b0; line-height: 1.5;">ハンターを引きつけて時間を稼ぐ盾。</p>
+                    <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #32323a; text-align: left;">
+                        <h5 style="margin: 0 0 5px 0; color: #b93d3d; font-size: 13px;">★おすすめキャラ</h5>
+                        <p style="margin: 0; font-size: 13px; color: #b0b0b0;"><strong style="color: #fff;">調香師</strong><br>香水を使って時間を巻き戻し、受けたダメージを無かったことにできます。</p>
                     </div>
                 </div>
-                <div class="grid-item">
-                    <span class="icon">🩹</span>
-                    <h4>補助型</h4>
-                    <p>回復や妨害でチームを支えるサポーター。</p>
-                    <div class="recommend-box">
-                        <h5>★おすすめキャラ</h5>
-                        <p><strong>医師</strong><br>自分が受けたキズを何度でも高速で治療でき、立て直しに貢献できます。</p>
+
+                <div style="background-color: #161618; padding: 20px 15px; border-radius: 4px; border: 1px solid #32323a; text-align: center;">
+                    <span style="font-size: 24px; display: block; margin-bottom: 8px;">🩹</span>
+                    <h4 style="margin: 0 0 8px 0; color: #fff; font-size: 15px;">補助型</h4>
+                    <p style="margin: 0 0 15px 0; font-size: 13px; color: #b0b0b0; line-height: 1.5;">回復や妨害でチームを支える。</p>
+                    <div style="margin-top: 15px; padding-top: 10px; border-top: 1px dashed #32323a; text-align: left;">
+                        <h5 style="margin: 0 0 5px 0; color: #b93d3d; font-size: 13px;">★おすすめキャラ</h5>
+                        <p style="margin: 0; font-size: 13px; color: #b0b0b0;"><strong style="color: #fff;">医師</strong><br>自分が受けたキズを何度でも高速で治療でき、立て直しに貢献できます。</p>
                     </div>
                 </div>
             </div>
-            <div class="center-btn">
-                <a href="index.html" class="btn-back">&larr; ホームに戻る</a>
+
+            <div class="center-btn" style="text-align: center; margin-top: 40px;">
+                <a href="index.html" class="btn-back" style="display: inline-block; color: #aaa; text-decoration: none; font-size: 14px; border: 1px solid #444; padding: 8px 20px; border-radius: 4px; transition: all 0.2s;">&larr; ホームに戻る</a>
             </div>
-        </section>
+        </div>
     </div>
 
+    <!-- フッター -->
     <footer>
-        <p>&copy; 2026 Identity V Fan Site. 非公式ファンサイト</p>
+        <div class="footer-container">
+            <p>&copy; 2026 Identity V Fan Site. 非公式ファンサイト</p>
+            <div class="footer-bar"></div>
+        </div>
     </footer>
 
 </body>
