@@ -8,24 +8,30 @@
 </head>
 <body>
 
+    <!-- ヘッダーエリア -->
     <header>
-        <div class="logo">Identity V</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="about.html">ゲーム概要</a></li>
-                <li><a href="survivor.html">サバイバー</a></li>
-                <li><a href="hunter.html" class="active">ハンター</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo">Identity V</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">ゲーム概要</a></li>
+                    <li><a href="survivor.html">サバイバー</a></li>
+                    <li><a href="hunter.html" class="active">ハンター</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!-- メインコンテンツ -->
     <div class="container page-content">
         <section class="card">
             <h2>👺 ハンター（追う側）</h2>
             <p class="rule-text"><strong>【勝利条件と基本ルール】</strong><br>強力なスキルを駆使してサバイバーを追い詰め、3人以上を脱落（ロケットチェアで送還）させれば勝利となります。</p>
             
             <h3>ハンターの主な立ち回りタイプとお勧めキャラクター</h3>
+            
+            <!-- 4つのタイプを綺麗に囲む grid 枠 -->
             <div class="grid">
                 <div class="grid-item">
                     <span class="icon">⚔️</span>
@@ -36,6 +42,7 @@
                         <p><strong>芸者</strong><br>サバイバーの背後に一瞬で急接近できるスキルを持ち、チェイスが楽です。</p>
                     </div>
                 </div>
+
                 <div class="grid-item">
                     <span class="icon">🏹</span>
                     <h4>遠隔・範囲攻撃型</h4>
@@ -45,6 +52,7 @@
                         <p><strong>「悪夢」</strong><br>狙ったサバイバーを自動でロックオンし、距離を無視した攻撃が可能です。</p>
                     </div>
                 </div>
+
                 <div class="grid-item">
                     <span class="icon">🌀</span>
                     <h4>移動・急襲型</h4>
@@ -54,6 +62,7 @@
                         <p><strong>血の女王</strong><br>鏡を使って自分の分身を作り出し、壁を無視して遠くの敵を奇襲します。</p>
                     </div>
                 </div>
+
                 <div class="grid-item">
                     <span class="icon">⏳</span>
                     <h4>遅延・守り型</h4>
@@ -63,15 +72,20 @@
                         <p><strong>ガードNo.26</strong><br>爆弾を連続で投げ時間差で起爆させ、チェアの救助を徹底的に妨害します。</p>
                     </div>
                 </div>
-            </div>
+            </div> <!-- grid の閉じタグ -->
+
             <div class="center-btn">
                 <a href="index.html" class="btn-back">&larr; ホームに戻る</a>
             </div>
         </section>
     </div>
 
+    <!-- フッター -->
     <footer>
-        <p>&copy; 2026 Identity V Fan Site. 非公式ファンサイト</p>
+        <div class="footer-container">
+            <p>&copy; 2026 Identity V Fan Site. 非公式ファンサイト</p>
+            <div class="footer-bar"></div>
+        </div>
     </footer>
 
 </body>
